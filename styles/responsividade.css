@@ -1,0 +1,332 @@
+/* ----- MOBILE ----- */
+@media (max-width: 650px){
+    /* Header */
+    header{
+        height: 3.8em;
+    }
+
+    nav{ 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        border-radius: 0 0 10px 10px;
+        height: 100dvh;
+        width: 70vw;
+        transition: all .3s ease-in-out;
+    }
+
+    nav a{
+        font-size: 1.2em;
+        color: var(--secondary-color);
+    }
+
+    .btn-menu{ display: block; }
+
+    .abrir-menu{
+        width: 35px;
+        height: 20px;
+        position: relative;
+        margin: auto;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .abrir-menu span{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: 40px;
+        left: 0;
+        transform: rotate(0deg);
+        background-color: var(--secondary-color);
+        transition: all .3s ease-in-out;
+    }
+
+    .abrir-menu span:nth-child(1){ top: 0px; }
+
+    .abrir-menu span:nth-child(2),
+    .abrir-menu span:nth-child(3){ top: 11px; }
+
+    .abrir-menu span:nth-child(4){ top: 22px; }
+
+    .abrir-menu.open span:nth-child(1){
+        top: 15px;
+        left: 50%;
+        width: 0%;
+        transform: translate(0%, -50%) scaleX(0);
+    }
+
+    .abrir-menu.open span:nth-child(2){ transform: rotate(45deg) ;}
+    .abrir-menu.open span:nth-child(3){ transform: rotate(-45deg) ;}
+
+    .abrir-menu.open span:nth-child(4){
+        top: 10px;
+        width: 0%;
+        left: 50%;
+        transform: translate(0%, 50%) scaleX(0);
+    }
+
+    .active{ right: 0; }
+
+    header button{
+        display: none;
+    }
+
+    nav button{
+        display: block;
+        width: 80%;
+        border-radius: 20px;
+        border: none;
+        font-size: 1.05em;
+    }
+
+    /* Home */
+    .home{ height: 90dvh; }
+    .home-img{ display: none; }
+
+    /* Problema */
+
+    .problema{ flex-direction: column; }
+    .problema-img-container{ margin: 7% 0; }
+    .problema-img{ margin-right: 0; }
+
+    .problema-text button{
+        display: block;
+        margin: auto;
+    }
+
+    /* Funcionamento */
+    .line{
+        width: 4px !important;
+        margin: 0;
+        height: 500px;
+    }
+
+    .line::after,
+    .line::before{
+        width: 5px;
+        height: 7%;
+        top: 94%;
+    }
+
+    .line::after{
+        right: 11px;
+        transform:rotate(-45deg);
+    }
+
+    .line::before{
+        right: -12px;
+        transform:rotate(45deg);
+    }
+
+    .item.first,
+    .item.second,
+    .item.third{ 
+        flex-direction: row;
+        left: -30px; 
+    }
+
+    .item.first{ top: 10%; }
+
+    .item.second{
+        flex-direction: row-reverse; 
+        left: -120px;
+        top: 42%; 
+    }
+
+    .item.third{ top: 75%; }
+    .item-btn{ display: none; }
+
+    /* Planos */
+    .planos{ padding: 5% 0; }
+    .grupo-planos { flex-direction: column; }
+    .card-plano:last-child{ padding-left: 20px; }
+
+    /* Prova social */
+    /* Slider */
+
+    .prova-slider, .slides{  height: 36em; }
+    .slide-card{ flex-direction: column; }
+    .navigation-auto{ margin-top: 535px; }
+
+    /* --- */
+
+    .prova-title{ height: 240px; }
+
+    .depoimento-cliente{ padding-left: 0; }
+
+    /* Footer */
+    .footer-container{ 
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .footer-col{
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col h2,
+    .footer-col h3{
+        text-align: center;
+    }
+
+    .footer-col:first-child{ width: 100%; }
+    .footer-bottom{ gap: 1.5em; }
+
+    .footer-legal a{ padding: 10px 1em; }
+}
+
+/* ----- TABLET ----- */
+@media (max-width: 991px){
+    /* Header */
+    nav a{
+        padding: 10px;
+    }
+
+    /* Funcionamento */
+    .line{
+        width: 100%;
+    }
+
+    /* Prova Social */
+    .prova-social{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .prova-title{
+        width: 100%;
+        height: 240px;
+        padding-right: 0;
+        transform: translate(0, 50px);
+        padding-bottom: 50px;
+    }
+
+    .depoimento-cliente{ padding-left: 0; }
+}
+
+/* Tela deitada */
+@media (max-device-width: 991px) and (orientation: landscape) {
+    /* Header */
+    header{
+        padding: 3px 7%;
+    }
+
+    /* Home */
+    .action{
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+    .action-post h1{
+        font-size: 1.3em;
+    }
+
+    .action-post p{
+        font-size: .9em;
+    }
+
+    .home-btns button{
+        padding: 5px 15px;
+    }
+
+    .home-img{
+        height: 18em;
+    }
+    /* Funcionamento */
+    .line::after{
+    top: 6.5px;
+    transform:rotate(-45deg);
+}
+
+    .line::before{
+        top: -6.2px;
+        transform:rotate(45deg);
+    }
+
+    /* Planos */
+    .grupo-planos{
+        flex-wrap: nowrap;
+    }
+    .card-plano { min-height: 22em; }
+    .card-plano h3{ 
+        font-size: 1.2em;
+        padding: 15px;
+    }
+    .card-plano h4{ 
+        font-size: .9em; 
+        padding: 5px;
+    }
+    .card-plano li{ 
+        font-size: .8em; 
+        padding: 3px;
+    }
+
+    .card-plano button{
+        padding: 10px 20px;
+        font-size: .7em;
+    }
+
+    .card-plano:last-child{ padding-left: 20px; }
+
+
+    /* Prova Social */
+
+    .prova-slider, .slides{  height: 15em; }
+    .cliente{ height: 18em; }
+
+    .slide-card{  padding-bottom: 50px; }
+
+    .img-cliente{
+        width: 9em;
+        height: 9em;
+    }
+
+    .manual-navigation{
+        margin-top: -22px;
+    }
+
+    .manual-btn, 
+    .navigation-auto div{ padding: 3.5px; }
+
+    .navigation-auto{ margin-top: 218px;}
+
+    .prova-title{ height: 180px; }
+    .prova-title h2{ font-size: 1.3em; }
+    .prova-title i{ 
+        font-size: 3.2em; 
+        padding: 10px;
+    }
+    .depoimento-cliente{ padding-left: 30px; }
+    
+    .depoimento-cliente h3 { font-size: 1.3em ;}
+    .depoimento-cliente p{
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 1800px){
+    :root{
+        --padding-padrao: 2% 25%;
+    }
+
+    .action p{
+        padding: 3em 0;
+    }
+
+    .problema,
+    .funcionamento,
+    .prova-social,
+    .fechamento{
+        padding: var(--padding-padrao);
+    }
+}
