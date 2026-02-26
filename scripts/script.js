@@ -1,5 +1,6 @@
 const abrirMenuBtn = document.querySelector('.abrir-menu');
 const navBar = document.getElementById('nav-bar');
+const btnTopo = document.getElementById("voltar-topo");
 
 // Menu Hamburger
 abrirMenuBtn.addEventListener('click', ()=>{
@@ -14,9 +15,14 @@ document.addEventListener('click', (event) => {
     }
 })
 
-// JavaScript
-const btnTopo = document.getElementById("voltar-topo");
+navBar.addEventListener('click', (e) => {
+  if(e.target.className === "navbar-link" || e.target.className === "btn-destaque-mobile"){
+    navBar.classList.remove('active');
+    abrirMenuBtn.classList.remove('open');
+  }
+})
 
+// Voltar ao Topo
 window.onscroll = function() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     btnTopo.style.display = "block";

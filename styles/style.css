@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 :root{
@@ -40,15 +41,26 @@ header{
     max-width: 100vw;
     background-color: var(--cor-fundo);
     z-index: 120;
+    height: 62px;
+}
+
+.logo a img{
+    width: 1.9em;
+    height: auto;
 }
 
 .logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8em;
     font-family: var(--highlighted-font);
-    font-size: 1.2em;
+    font-size: 1.15em;
     text-decoration: none;
     color: var(--cor-texto-principal);
     font-weight: 600;
     letter-spacing: .5px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);       
 }
 
 .nav-bar{
@@ -78,15 +90,16 @@ header{
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--cor-texto-principal);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: 20px;
     transition: all .3s ease-in-out;
 }
 
-.navbar-link:hover::after{ width: 50%; }
+.navbar-link:hover::after{ width: 30%; }
 
 .btn-destaque,
 .nav-bar .btn-destaque-mobile{
@@ -184,7 +197,7 @@ header{
     border: 4px solid var(--cor-destaque);
     font-size: .9em;
     font-weight: 500;
-    width: 300px;
+    width: 320px;
     cursor: pointer;
     transition: all .3s ease-in;
 }
@@ -349,20 +362,20 @@ header{
 .sk-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     width: 240px;
-    height: 280;
+    height: 320px;
     text-align: left;
     border-radius: 15px;
     background-color: var(--cor-destaque);
     padding: 1em;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .sk-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
 }
 
 .img-sk{
@@ -533,12 +546,14 @@ header{
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top;
-    transition: background-position 15s linear;
     border-radius: 20px;
+    transition: background-position 15s linear;
 }
 
 .P-card:hover .P-img { background-position: bottom; }
+
 .P-img1{ background-image: url(../images/sl20.png); }
+.P-img2{ background-image: url(../images/SW-todo-list.png); }
 
 .P-content{ 
     position: absolute;
@@ -609,6 +624,7 @@ header{
     text-align: center;
     padding: var(--padding-padrao);
     padding-top: 5%;
+    /* scroll-margin-top: 50px; */
 }
 
 .contato h2{
@@ -680,6 +696,7 @@ header{
     background-color: transparent;
     color: var(--cor-texto-principal);
     font-weight: 700;
+    transition: all .3s ease-in-out;
 }
 
 .form-info{
@@ -796,14 +813,13 @@ header{
     margin-top: 20px;
     border: 3px solid var(--cor-fundo);
     width: 35%;
-    transition: all .3s ease-in-out;
 }
 
 .fechamento a:hover{
+    transition: all .3s ease-in-out;
     background-color: transparent;
     color: var(--cor-fundo);
     font-weight: 700;
-    padding-right: 30px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
@@ -863,16 +879,22 @@ footer{
 }
 
 .footer-logo-img img{
-    width: 280px;
+    width: 145px;
     height: auto;
-    transform: translateY(20px);
+    transform: translateY(25px);
+}
+
+.footer-logo-h2{
+    text-align: center;
+    letter-spacing: .5px;
+    padding-bottom: 10px !important;
 }
 
 .footer-logo-p {
     text-align: center;
     font-family: var(--highlighted-font);
     font-size: 1em;
-    letter-spacing: .5px;
+    padding: 0;
 }
 
 .footer-col a,
