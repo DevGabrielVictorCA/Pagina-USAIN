@@ -27,7 +27,7 @@
     .skils h2,
     .funcionamento h2,
     .portfolio article h2,
-    .contato h2 { font-size: 1.5em; }
+    .contato h2 { font-size: 1.35em; }
 
     .problema article p,
     .skils p,
@@ -59,13 +59,13 @@
     /* Fechamento */
     .google-logo i{ 
         margin: 30px 0 25px;
-        font-size: 6em; 
+        font-size: 5.5em; 
     }
-    .fechamento h2{ font-size: 1.5em; }
+    .fechamento h2{ font-size: 1.45em; }
 
     .fechamento p{ 
-        padding: 30px;
-        font-size: 1.2em; 
+        padding: 30px 0;
+        font-size: 1.15em; 
     }
 
     .fechamento a{ 
@@ -257,7 +257,7 @@
     }
 
     /* Fechamento */
-    .fechamento h2{ font-size: 1.6em; }
+    .fechamento h2{ font-size: 1.5em; }
 
     .fechamento a{ 
         padding: 15px;
