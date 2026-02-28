@@ -15,117 +15,7 @@
 /* ----- TABLET ----- */
 @media (max-width: 991px){
     /* Header */
-    .navbar-link{ padding: 10px; }
-
-    /* Problema */
-    .problema-img img{ width: 20em; }
-
-    .problema article h2,
-    .problema article p{ text-align: center; }
-
-    .problema article h2,
-    .skils h2,
-    .funcionamento h2,
-    .portfolio article h2,
-    .contato h2 { font-size: 1.35em; }
-
-    .problema article p,
-    .skils p,
-    .funcionamento p:not(.timeline-item p),
-    .portfolio article p:not(.P-desc),
-    .contato p { font-size: 1.1em; }
-
-    .problema article .p-destaque{ font-size: 1em; }
-
-
-    /* Método */
-    .timeline{ gap: 2.5em; }
-    .timeline-item{ padding: 10px 0;}
-    .timeline-item:not(:first-child)::before{ content: ''; }
-    .timeline-item p{ font-size: 1em;}
-
-    /* Portfólio */
-    .P-tags{ display: none; }
-    .P-card{ height: 380px; }
-    .P-content{ height: 13em; }
-
-    /* Contato */
-    .contato-whatsapp a{ 
-        width: 90%; 
-        line-height: 30px;
-        padding: 11.5px;
-    }
-
-    /* Fechamento */
-    .google-logo i{ 
-        margin: 30px 0 25px;
-        font-size: 5.5em; 
-    }
-    .fechamento h2{ font-size: 1.45em; }
-
-    .fechamento p{ 
-        padding: 30px 0;
-        font-size: 1.15em; 
-    }
-
-    .fechamento a{ 
-        width: 50%;
-        padding: 15px;
-    }
-
-    /* Botões aside */
-    .B-aside{
-        width: 45px;
-        height: 45px;
-        font-size: 1.5em;
-    }
-
-}
-
-/* Tela deitada */
-@media (max-device-width: 991px) and (orientation: landscape) {
-    /* Header */
-    .navbar-link,
-    .btn-destaque{ font-size: .9em;}
-
-    .btn-destaque{ padding: 10px 15px; }
-    
-    /* Home */
-    .action{
-        align-items: flex-end;
-        padding-bottom: 20px;
-    }
-    .action-post h1{
-        line-height: 30px;
-        font-size: 1.3em;
-    }
-
-    .action-post p{
-        padding: 2em 0;
-        font-size: .9em;
-    }
-
-    .home-btns button{ padding: 5px 15px; }
-    .home-img{ height: 18em; }
-
-    /* Funcionamento */
-    .line::after{
-        top: 6.5px;
-        transform:rotate(-45deg);
-    }
-
-    .line::before{
-        top: -6.2px;
-        transform:rotate(45deg);
-    }
-}
-
-/* ----- MOBILE ----- */
-@media (max-width: 650px){
-    /* Header */
-    header{
-        height: 3.8em;
-    }
+    .logo a{ font-size: 1.3em; }
 
     .nav-bar{ 
         display: flex; 
@@ -206,6 +96,140 @@
         padding: 13px 30px;
     }
 
+    /* Problema */
+    .problema-img img{ width: 20em; }
+
+    .problema article h2,
+    .problema article p{ text-align: center; }
+
+    .problema article h2,
+    .skils h2,
+    .funcionamento h2,
+    .portfolio article h2,
+    .contato h2 { font-size: 1.35em; }
+
+    .problema article p,
+    .skils p,
+    .funcionamento p:not(.timeline-item p),
+    .portfolio article p:not(.P-desc),
+    .contato p { font-size: 1.1em; }
+
+    .problema article .p-destaque{ font-size: 1em; }
+    
+    /* Serviços */
+    .sk-card{ height: 340px; }
+
+    /* Método */
+    .timeline{ gap: 2.5em; }
+    .timeline-item{ padding: 10px 0;}
+    .timeline-item:not(:first-child)::before{ content: ''; }
+    .timeline-item p{ font-size: 1em;}
+
+    /* Portfólio */
+    .P-tags{ display: none; }
+    .P-card{ height: 380px; }
+    .P-content{ height: 13em; }
+
+    /* Depoimentos */
+    .depoimentos{ margin-top: 1rem; }
+    .depoimentos h2 { display: block; }
+    .depoimento-box blockquote{ padding-top: 10px; }
+
+    .estrela{
+        width: 2rem;
+        height: auto;
+    }
+
+    /* Contato */
+    .contato-whatsapp a{ 
+        width: 90%; 
+        line-height: 30px;
+        padding: 11.5px;
+    }
+
+    /* Fechamento */
+    .google-logo svg{ 
+        margin: 30px 0 25px;
+        width: 1.1em; 
+    }
+    .fechamento h2{ font-size: 1.45em; }
+
+    .fechamento p{ 
+        padding: 30px 0;
+        font-size: 1.1em; 
+    }
+
+    .fechamento a{ 
+        width: 50%;
+        padding: 15px;
+    }
+
+    /* Botões aside */
+    .aside-btns{ gap: 2em; }
+
+    .B-aside{
+        width: 65px;
+        height: 65px;
+        font-size: 2.3rem;
+    }
+
+}
+
+/* Tela deitada */
+@media (max-device-width: 991px) and (orientation: landscape) {
+    /* Header */
+    .navbar-link,
+    .btn-destaque{ font-size: .9em;}
+
+    .btn-destaque{ padding: 10px 15px; }
+    
+    /* Home */
+    .action{
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+    .action-post h1{
+        line-height: 30px;
+        font-size: 1.3em;
+    }
+
+    .action-post p{
+        padding: 2em 0;
+        font-size: .9em;
+    }
+
+    .home-btns button{ padding: 5px 15px; }
+    .home-img{ height: 18em; }
+
+    /* Funcionamento */
+    .line::after{
+        top: 6.5px;
+        transform:rotate(-45deg);
+    }
+
+    .line::before{
+        top: -6.2px;
+        transform:rotate(45deg);
+    }
+
+    /* Depoimentos */
+    .depoimento-box blockquote{ padding-top: 1px; }
+
+    /* Botões aside */
+    .aside-btns{ gap: 1.3em; }
+
+    .B-aside{
+        width: 45px;
+        height: 45px;
+        font-size: 2.3rem;
+    }
+}
+
+/* ----- MOBILE ----- */
+@media (max-width: 650px){
+    /* Header */
+    header{ height: 3.8em; }
+
     /* Home */
     .home{ height: 100dvh; }
 
@@ -235,6 +259,10 @@
         transform: translate(0, 0);
     }
 
+    .timeline{
+        gap: 2.2em;
+    }
+
     /* Portfólio */
     .P-cards{ gap: 2.5em; }
 
@@ -248,6 +276,32 @@
         height: 13.5em;
         margin: 5%;
     }
+
+    /* Depoimentos */
+
+    .depoimento-box{ padding: 1.5rem; }
+
+    .cliente-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-cliente-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cliente-header img{
+        margin: 20px 0;
+        margin-right: 0;
+    }
+
+    .depoimento-box blockquote{ padding-top: 15px }
+
+    .estrelas{ width: 70%; }
+
 
     /* Contatos */
     .contato-email button,
@@ -296,8 +350,8 @@
     
     /* Botões aside */
     .B-aside{
-        width: 50px;
-        height: 50px;
-        font-size: 1.7em;
+        width: 55px;
+        height: 55px;
+        font-size: 2rem;
     }
 }

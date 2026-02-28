@@ -10,20 +10,22 @@
     <meta name="keywords" content="criação de sites, desenvolvimento web, landing page, site institucional, redesign de site, empresa de sites, desenvolvimento de website profissional">
     <meta name="author" content="USAIN">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://websea.com.br/">
+    <link rel="canonical" href="https://usainsolucoes.com.br/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="USAIN | Desenvolvimento Estratégico de Websites">
     <meta property="og:description" content="Websites estratégicos para empresas que querem crescer com autoridade.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://usain.com.br/">
+    <meta property="og:url" content="https://usainsolucoes.com.br/">
 
-    <link rel="icon" href="images/logo-branca.png" type="image/png" sizes="64x64">
+    <link rel="icon" href="images/logo-branca1.png" type="image/png" sizes="64x64">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsividade.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/3bc329aa88.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     <header data-aos="fade-down">
         <div class="logo">
             <a href="/" aria-label="Página inicial da USAIN">
-                <img src="images/logo-azul.png" alt="imagem de logo">
+                <img src="images/logo-azul.png" alt="imagem de logo" fetchpriority="high">
                 USAIN
             </a>
         </div>
@@ -41,13 +43,14 @@
             <a href="#servicos" class="navbar-link">Serviços</a>
             <a href="#processo" class="navbar-link">Processo</a>
             <a href="#portfolio" class="navbar-link">Projetos</a>
+            <a href="#depoimentos" class="navbar-link">Depoimentos</a>
 
             <a href="#contato" class="btn-destaque-mobile">Contato</a>
         </nav>
 
         <a href="#contato" class="btn-destaque">Contato</a>
 
-        <div class="btn-menu" aria-label="Abrir menu mobile">
+        <div class="btn-menu">
             <div class="abrir-menu">
                 <span></span>
                 <span></span>
@@ -61,11 +64,11 @@
 
         <!-- Home -->
         <section class="home" id="home">
+            <img src="images/hero-img.jpg" alt="imagem de fundo Usain" class="hero-img" fetchpriority="high">
+            <div class="overlay"></div>
             <article class="action">
                 <div class="action-post" data-aos="zoom-in">
-                    <h1>
-                        Transformamos presença digital em autoridade e crescimento real.
-                    </h1>
+                    <h1>Transformamos sua presença digital em autoridade e resultado real.</h1>
                     <p>Criamos e modernizamos websites estratégicos para empresas que querem se tornar referência no seu mercado.</p>
                     <div class="home-btns">
                         <a href="#contato" class="btn-primary">Quero uma proposta estratégica <span><i class="fa-solid fa-arrow-right"></i></span></a>
@@ -110,8 +113,8 @@
             <article class="problema-text">
                 <h2>Sua presença digital está fortalecendo sua marca ou afastando oportunidades?</h2>
                 <p>
-                    Empresas que não investem em um site estratégico deixam de gerar autoridade e perdem clientes diariamente.
-                    <br>Um site desatualizado não apenas compromete a imagem, <br><b>ele transmite insegurança.</b>
+                    Empresas que não investem em estrutura digital perdem autoridade e clientes todos os dias.
+                    <br>Um site desatualizado não compromete apenas a imagem.<br><b>Ele compromete decisões.</b>
                 </p>
                 <a href="#contato" class="p-destaque">Hoje, confiança começa no digital.</a>
             </article>
@@ -121,7 +124,7 @@
         <section class="skils" id="servicos" data-aos="fade-up">
             <h2>Nós transformamos sua presença online em um ativo estratégico capaz de gerar posicionamento, credibilidade e crescimento.</h2>
             <p>
-                Não desenvolvemos apenas sites bonitos.
+                Não desenvolvemos apenas sites.
                 Criamos plataformas que impulsionam decisões.
             </p>
 
@@ -129,7 +132,10 @@
 
                 <article class="sk-card" data-aos="zoom-in">
                     <div class="img-sk" role="img" aria-label="Landing Pages">
-                        <i class="fa-solid fa-computer" loading="lazy"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M380.8 96C372.7 110.1 368 126.5 368 144L368 160L96 160L96 384L368 384L368 448L96 448C60.7 448 32 419.3 32 384L32 160C32 124.7 60.7 96 96 96L380.8 96zM368 496C368 513.5 372.7 529.9 380.8 544L152 544C138.7 544 128 533.3 128 520C128 506.7 138.7 496 152 496L368 496zM464 96L560 96C586.5 96 608 117.5 608 144L608 496C608 522.5 586.5 544 560 544L464 544C437.5 544 416 522.5 416 496L416 144C416 117.5 437.5 96 464 96zM488 160C474.7 160 464 170.7 464 184C464 197.3 474.7 208 488 208L536 208C549.3 208 560 197.3 560 184C560 170.7 549.3 160 536 160L488 160zM488 256C474.7 256 464 266.7 464 280C464 293.3 474.7 304 488 304L536 304C549.3 304 560 293.3 560 280C560 266.7 549.3 256 536 256L488 256zM544 400C544 382.3 529.7 368 512 368C494.3 368 480 382.3 480 400C480 417.7 494.3 432 512 432C529.7 432 544 417.7 544 400z"/>
+                        </svg>
                     </div>
                     <div class="sk-content">
                         <h3>Landing Pages</h3>
@@ -139,7 +145,10 @@
 
                 <article class="sk-card" data-aos="zoom-in">
                     <div class="img-sk" role="img" aria-label="Sites Institucionais">
-                        <i class="fa-regular fa-building" loading="lazy"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 128C512 92.7 483.3 64 448 64L192 64zM304 416L336 416C353.7 416 368 430.3 368 448L368 528L272 528L272 448C272 430.3 286.3 416 304 416zM224 176C224 167.2 231.2 160 240 160L272 160C280.8 160 288 167.2 288 176L288 208C288 216.8 280.8 224 272 224L240 224C231.2 224 224 216.8 224 208L224 176zM368 160L400 160C408.8 160 416 167.2 416 176L416 208C416 216.8 408.8 224 400 224L368 224C359.2 224 352 216.8 352 208L352 176C352 167.2 359.2 160 368 160zM224 304C224 295.2 231.2 288 240 288L272 288C280.8 288 288 295.2 288 304L288 336C288 344.8 280.8 352 272 352L240 352C231.2 352 224 344.8 224 336L224 304zM368 288L400 288C408.8 288 416 295.2 416 304L416 336C416 344.8 408.8 352 400 352L368 352C359.2 352 352 344.8 352 336L352 304C352 295.2 359.2 288 368 288z"/>
+                        </svg>
                     </div>
                     <div class="sk-content">
                         <h3>Sites Institucionais</h3>
@@ -149,7 +158,10 @@
 
                 <article class="sk-card" data-aos="zoom-in">
                     <div class="img-sk" role="img" aria-label="Redesign">
-                        <i class="fa-solid fa-palette" loading="lazy"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M576 320C576 320.9 576 321.8 576 322.7C575.6 359.2 542.4 384 505.9 384L408 384C381.5 384 360 405.5 360 432C360 435.4 360.4 438.7 361 441.9C363.1 452.1 367.5 461.9 371.8 471.8C377.9 485.6 383.9 499.3 383.9 513.8C383.9 545.6 362.3 574.5 330.5 575.8C327 575.9 323.5 576 319.9 576C178.5 576 63.9 461.4 63.9 320C63.9 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320zM192 352C192 334.3 177.7 320 160 320C142.3 320 128 334.3 128 352C128 369.7 142.3 384 160 384C177.7 384 192 369.7 192 352zM192 256C209.7 256 224 241.7 224 224C224 206.3 209.7 192 192 192C174.3 192 160 206.3 160 224C160 241.7 174.3 256 192 256zM352 160C352 142.3 337.7 128 320 128C302.3 128 288 142.3 288 160C288 177.7 302.3 192 320 192C337.7 192 352 177.7 352 160zM448 256C465.7 256 480 241.7 480 224C480 206.3 465.7 192 448 192C430.3 192 416 206.3 416 224C416 241.7 430.3 256 448 256z"/>
+                        </svg>
                     </div>
                     <div class="sk-content">
                         <h3>Redesign</h3>
@@ -159,7 +171,10 @@
 
                 <article class="sk-card" data-aos="zoom-in">
                     <div class="img-sk" role="img" aria-label="Sistemas Web">
-                        <i class="fa-solid fa-code" loading="lazy"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"/>
+                        </svg>
                     </div>
                     <div class="sk-content">
                         <h3>Sistemas Web</h3>
@@ -192,59 +207,89 @@
                 </li>
                 <li class="timeline-item fourth" data-aos="fade-up">
                     <span class="timeline-step">4</span>
-                    <h3>Entrega</h3>
+                    <h3>Implementação</h3>
                     <p>Publicação, testes e suporte inicial para garantir estabilidade total.</p>
                 </li>
             </ul>
         </section>
 
-        <!-- Portfólio -->
-        <section class="portfolio" id="portfolio" data-aos="fade-up">
-            <article>
-                <h2>Projetos que fortalecem marcas e geram posicionamento real.</h2>
-                <p>Projetos desenvolvidos com foco em estratégia, performance e crescimento sustentável.</p>
-            </article>
+        <article class="titulo-projetos">
+            <h2>Projetos que fortalecem marcas e geram posicionamento real.</h2>
+            <p>Projetos desenvolvidos com foco em estratégia, performance e crescimento sustentável.</p>
+        </article>
+        <div class="container-portfolio-depoimento">
 
-            <div class="P-cards">
-
-                <article class="P-card" data-aos="zoom-in">
-                    <div class="P-img P-img1" role="img" aria-label="Projeto SL20 Engenharia"></div>
-                    <div class="P-content" data-aos="fade-up">
-                        <span class="P-selo">Site Institucional</span>
-                        <h3 class="P-title">SL20 Engenharia</h3>
-                        <hr>
-                        <p class="P-desc">Plataforma moderna com foco em autoridade técnica.</p>
-                        <div class="P-tags">
-                            <span>Institucional</span>
-                            <span>SEO</span>
-                            <span>Responsivo</span>
+            <!-- Portfólio -->
+            <section class="portfolio" id="portfolio" data-aos="fade-up">
+                <div class="P-cards">
+                    <article class="P-card" data-aos="zoom-in">
+                        <div class="P-img P-img1" role="img" aria-label="Projeto SL20 Engenharia"></div>
+                        <div class="P-content" data-aos="fade-up">
+                            <span class="P-selo">Site Institucional</span>
+                            <h3 class="P-title">SL20 Engenharia</h3>
+                            <hr>
+                            <p class="P-desc">Plataforma moderna com foco em autoridade técnica.</p>
+                            <div class="P-tags">
+                                <span>Institucional</span>
+                                <span>SEO</span>
+                                <span>Responsivo</span>
+                            </div>
+                            <a class="P-link" href="https://sl20.com.br/" target="_blank" rel="noopener noreferrer">
+                                Ver Projeto
+                            </a>
                         </div>
-                        <a class="P-link" href="https://sl20.com.br/" target="_blank" rel="noopener noreferrer">
-                            Ver Projeto
-                        </a>
+                    </article>
+                </div>
+            </section>
+    
+            <!-- Depoimentos -->
+             <section class="depoimentos" id="depoimentos">
+                <h2>O que nossos clientes dizem</h2>
+                <article class="depoimento-box" data-aos="fade-up">
+                    <div class="cliente-header">
+                        <div class="logo-cliente-container">
+                            <img src="images/cliente-sl20/sl20-logo.png" alt="Logo SL20 Tecnologia" loading="lazy" class="logo-cliente">
+                        </div>
+                        <div class="cliente-titulo">                    
+                            <h4>Eng. Cristiano S. Negrão</h4>
+                            <p>Fundador e CEO – SL20 Tecnologia</p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <p>
+                            "A Usain foi responsável pelo desenvolvimento da página de divulgação da SL20 Tecnologia, e o resultado superou nossas expectativas. Desde o início, a equipe demonstrou alto nível de profissionalismo, entendendo rapidamente nossas necessidades e traduzindo a proposta multidisciplinar da empresa em um site claro, moderno e funcional. Todo o processo — do briefing à publicação — foi conduzido com organização, prazos cumpridos e excelente comunicação. O layout ficou alinhado à nossa identidade, o conteúdo bem estruturado e a experiência de navegação muito fluida, o que reforçou nossa presença digital junto aos clientes. 
+                            <p class="recomendacao-text">Recomendo a Usain pelo cuidado com os detalhes, qualidade técnica e comprometimento com a entrega."</p>
+                        </p>
+                    </blockquote>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="icon-citacao">
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path d="M96 280C96 213.7 149.7 160 216 160L224 160C241.7 160 256 174.3 256 192C256 209.7 241.7 224 224 224L216 224C185.1 224 160 249.1 160 280L160 288L224 288C259.3 288 288 316.7 288 352L288 416C288 451.3 259.3 480 224 480L160 480C124.7 480 96 451.3 96 416L96 280zM352 280C352 213.7 405.7 160 472 160L480 160C497.7 160 512 174.3 512 192C512 209.7 497.7 224 480 224L472 224C441.1 224 416 249.1 416 280L416 288L480 288C515.3 288 544 316.7 544 352L544 416C544 451.3 515.3 480 480 480L416 480C380.7 480 352 451.3 352 416L352 280z"/>
+                    </svg>
+                    <div class="estrelas">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="estrela">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="estrela">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="estrela">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="estrela">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="estrela">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                        </svg>
                     </div>
                 </article>
-
-                <article class="P-card" data-aos="zoom-in">
-                    <div class="P-img P-img2" role="img" aria-label="Projeto Web estratégico e responsivo"></div>
-                    <div class="P-content" data-aos="fade-up">
-                        <span class="P-selo">Projeto Web</span>
-                        <h3 class="P-title">Website estratégico e responsivo</h3>
-                        <hr>
-                        <p class="P-desc">Desenvolvido com foco em autoridade e geração de contatos.</p>
-                        <div class="P-tags">
-                            <span>Institucional</span>
-                            <span>SEO</span>
-                            <span>Responsivo</span>
-                        </div>
-                        <a class="P-link" href="#">
-                            Ver Projeto
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
+             </section>
+        </div>
 
         <!-- Formulario de Contato -->
         <section class="contato" id="contato" data-aos="fade-up">
@@ -268,7 +313,7 @@
                     <label for="mensagem">Conte um pouco sobre sua necessidade</label>
                     <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quanto mais detalhes, melhor podemos te ajudar."></textarea>
 
-                    <button type="submit" data-aos="zoom-in">Quero transformar meu site</button>
+                    <button type="submit">Quero transformar meu site</button>
 
                     <small class="form-info">
                         Seus dados são protegidos e utilizados apenas para contato.
@@ -281,7 +326,7 @@
                     <img src="images/contato5.png" alt="contato via WhatsApp" loading="lazy">
                     <h3>Prefere contato direto?</h3>
                     <p>Clique no botão abaixo e você será redirecionado para o nosso WhatsApp</p>
-                    <a href="#" aria-label="Conversar pelo WhatsApp" data-aos="zoom-in">
+                    <a href="#" aria-label="Conversar pelo WhatsApp">
                         Conversar pelo WhatsApp
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -293,7 +338,7 @@
         <section class="faq" data-aos="fade-up">
             <h2>Dúvidas Frequentes <span><i class="fa-regular fa-circle-question"></i></span></h2>
 
-            <details>
+            <details open>
                 <summary>Em quanto tempo o site fica pronto?</summary>
                 <p>O prazo varia conforme a complexidade do projeto. Em média, a entrega acontece entre 7 e 20 dias. Após o diagnóstico inicial, definimos um cronograma claro para garantir organização e cumprimento dos prazos.</p>
             </details>
@@ -325,22 +370,36 @@
         <!-- Fechamento -->
         <section class="fechamento">
             <article class="google-logo" data-aos="zoom-in">
-                <i class="fa-brands fa-chrome" loading="lazy"></i>
+                <!-- <i class="fa-brands fa-chrome" loading="lazy"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <!--!Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path d="M64 320C64 273.4 76.5 229.6 98.3 191.1L208.1 382.3C230 421.5 271.9 448 320 448C334.3 448 347.1 445.7 360.8 441.4L284.5 573.6C159.9 556.3 64 449.3 64 320zM429.1 385.6C441.4 366.4 448 343.1 448 320C448 281.8 431.2 247.5 404.7 224L557.4 224C569.4 253.6 576 286.1 576 320C576 461.4 461.4 575.1 320 576L429.1 385.6zM541.8 192L320 192C257.1 192 206.3 236.1 194.5 294.7L118.2 162.5C165 102.5 238 64 320 64C414.8 64 497.5 115.5 541.8 192zM408 320C408 368.6 368.6 408 320 408C271.4 408 232 368.6 232 320C232 271.4 271.4 232 320 232C368.6 232 408 271.4 408 320z"/>
+                </svg>
             </article>
             <h2 data-aos="zoom-in">Enquanto você lê isso, alguém pode estar pesquisando sua empresa no Google.</h2>
             <p data-aos="zoom-in">
                 A pergunta é: quando essa pessoa acessar seu site, ela sentirá confiança para fechar negócio?
-                <br>Vamos transformar essa oportunidade em resultado.
+                <br>Vamos transformar essa oportunidade em crescimento estruturado.
             </p>
-            <a href="#contato" data-aos="zoom-in">Falar com a USAIN <span><i class="fa-solid fa-arrow-right" ></i></span></a>
+            <a href="#contato">Falar com a USAIN <span><i class="fa-solid fa-arrow-right" ></i></span></a>
         </section>
 
         <!-- Botões Aside -->
          <aside class="aside-btns">
             <div id="voltar-topo">
-                <a href="#" class="B-aside"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#" class="B-aside">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path d="M342.6 73.4C330.1 60.9 309.8 60.9 297.3 73.4L137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7C149.8 291.2 170.1 291.2 182.6 278.7L288 173.3L288 544C288 561.7 302.3 576 320 576C337.7 576 352 561.7 352 544L352 173.3L457.4 278.7C469.9 291.2 490.2 291.2 502.7 278.7C515.2 266.2 515.2 245.9 502.7 233.4L342.7 73.4z"/>
+                    </svg>
+                </a>
             </div>
-            <a href="#" class="B-aside"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="B-aside">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
+                </svg>
+            </a>
          </aside>
 
     </main>
@@ -351,16 +410,16 @@
 
             <div class="footer-col" data-aos="zoom-in">
                 <div class="footer-logo-img">
-                    <img src="images/logo-azul.png" alt="logo usain">
+                    <img src="images/logo-azul.png" alt="logo usain" loading="lazy">
                 </div>
                 <h2 class="footer-logo-h2">USAIN</h2>
-                <p class="footer-logo-p">Tecnologia que impulsiona resultados</p>
+                <p class="footer-logo-p">Estrutura para crescer</p>
             </div>
 
             <div class="footer-col" data-aos="fade-up">
                 <h3>Contato</h3>
                 <address>
-                    <p class="contact-p">Email: <a href="mailto:contato@usain.com">contato@usain.com</a></p>
+                    <p class="contact-p">Email: <a href="mailto:usainsolucoesdigitais@gmail.com">usainsolucoesdigitais@gmail.com</a></p>
                     <p class="contact-p">WhatsApp: <a href="tel:+5511900000000">(11) 90000-0000</a></p>
                     <p class="contact-p">Seg - Sex, 9h às 18h</p>
                 </address>
@@ -369,8 +428,18 @@
             <div class="footer-col" data-aos="fade-up">
                 <h3>Redes Sociais</h3>
                 <nav aria-label="Redes sociais" class="redes-sociais">
-                    <a href="https://www.instagram.com/websea_tisolucoes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="https://www.instagram.com/websea_tisolucoes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM165 266.2L231.5 266.2L231.5 480L165 480L165 266.2zM236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160C219.5 160 236.7 177.2 236.7 198.5zM413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480L413.9 480z"/>
+                        </svg>
+                    </a>
                 </nav>
             </div>
 
@@ -385,6 +454,6 @@
         // Inicializador AOS animação
         AOS.init();
     </script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
