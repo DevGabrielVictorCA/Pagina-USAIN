@@ -165,7 +165,7 @@
     }
 
     /* Botões aside */
-    .aside-btns{ gap: 2em; }
+    .aside-btns{ gap: 1.5em; }
 
     .B-aside{
         width: 65px;
@@ -230,8 +230,13 @@
     /* Header */
     header{ height: 3.8em; }
 
+    .navbar-link{ font-size: 1em; }
+
     /* Home */
     .home{ height: 100dvh; }
+
+    .action-post h1{ font-size: 2em; }
+    .action-post p{ font-size: 1.1em; }
 
     .btn-primary{
         font-size: 1em;
@@ -298,7 +303,7 @@
         margin-right: 0;
     }
 
-    .depoimento-box blockquote{ padding-top: 15px }
+    .depoimento-box blockquote{ padding: 15px 0 40px; }
 
     .estrelas{ width: 70%; }
 
