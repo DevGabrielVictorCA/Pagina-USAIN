@@ -291,42 +291,52 @@
              </section>
         </div>
 
-        <!-- Formulario de Contato -->
+       <!-- Formulario de Contato -->
         <section class="contato" id="contato" data-aos="fade-up">
-            <h2>Pronto para transformar sua presença digital em uma vantagem competitiva?</h2>
+            <h2>Pronto para elevar sua presença digital?</h2>
             <p>
-                Preencha o formulário e receba uma proposta estratégica personalizada para o seu negócio.
+                Preencha o formulário e receba uma proposta estratégica personalizada para seu negócio.
+                <br>
             </p>
             
             <div class="contato-container">
-                <form class="contato-email" method="post" action="#" aria-label="Formulário de contato" data-aos="fade-up">
+                <form class="contato-email" id="formContato" method="post" action="#" aria-label="Formulário de contato" data-aos="fade-up">
 
-                    <label for="nome">Nome completo</label>
+                    <label for="nome">Nome completo *</label>
                     <input type="text" id="nome" name="nome" required>
 
-                    <label for="email">Email para contato</label>
+                    <label for="email">Email para contato *</label>
                     <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone/WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
 
                     <label for="projeto">Tipo de projeto</label>
                     <input type="text" id="projeto" name="projeto" placeholder="Landing page, site institucional, redesign...">
 
-                    <label for="mensagem">Conte um pouco sobre sua necessidade</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quanto mais detalhes, melhor podemos te ajudar."></textarea>
+                    <label for="mensagem">Conte um pouco sobre sua necessidade *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quanto mais detalhes, melhor podemos te ajudar." required></textarea>
 
-                    <button type="submit">Quero transformar meu site</button>
+                    <button type="submit" data-aos="zoom-in" id="btnEnviar">
+                        <span class="btn-text">Quero receber meu site</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fa-solid fa-circle-notch fa-spin"></i> Enviando...
+                        </span>
+                    </button>
 
                     <small class="form-info">
-                        Seus dados são protegidos e utilizados apenas para contato.
-                        <br>Retorno em até 24h úteis.
+                        Seus dados estão seguros. <br> Resposta rápida e sem compromisso.
                     </small>
+
+                    <div id="formMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px; text-align: center; font-weight: 500;"></div>
 
                 </form>
 
                 <aside class="contato-whatsapp" data-aos="fade-up">
-                    <img src="images/contato5.png" alt="contato via WhatsApp" loading="lazy">
+                    <img src="images/contato5.png" alt="contato via WhatsApp">
                     <h3>Prefere contato direto?</h3>
                     <p>Clique no botão abaixo e você será redirecionado para o nosso WhatsApp</p>
-                    <a href="#" aria-label="Conversar pelo WhatsApp">
+                    <a href="#" aria-label="Conversar pelo WhatsApp" data-aos="zoom-in">
                         Conversar pelo WhatsApp
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
@@ -449,11 +459,15 @@
         </div>
     </footer>
             
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Inicializador AOS animação
         AOS.init();
     </script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/firebase-config.js"></script>
 </body>
 </html>
