@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    font-display: swap;
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--cor-fundo); 
+    overflow-x: hidden;
 }
 
 :root{
@@ -18,11 +30,6 @@
     --cor-destaque: #0e1320;
     --padding-padrao: 40px 7%;
     --padding-p: 20px 0;
-}
-
-html body{ 
-    background-color: var(--cor-fundo); 
-    overflow-x: hidden;
 }
 
 main { margin-top: 50px; }
@@ -111,7 +118,7 @@ header{
     background-color: var(--cor-destaque);
     font-weight: 500;
     font-size: 1.1em;
-    padding: 9px 20px;
+    padding: 12px 20px;
     border-radius: 15px;
     font-family: var(--highlighted-font);
     border: 2.7px solid var(--cor-destaque);
@@ -141,8 +148,7 @@ header{
     align-items: center;
     justify-content: center;
     line-height: 2.5em;
-    height: auto;
-    min-height: calc(80vh + 70px);
+    height: 100dvh;
     position: relative;
     padding: var(--padding-padrao);
     overflow: hidden;
@@ -184,7 +190,7 @@ header{
     font-family: var(--highlighted-font);
     color: var(--cor-fundo);
     font-size: 2.1em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .action-post p{
@@ -192,7 +198,7 @@ header{
     line-height: 35px;
     padding: 3em 0;
     color: var(--cor-fundo);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .home-btns{
@@ -210,9 +216,9 @@ header{
     border-radius: 15px;
     border: 3px solid var(--cor-fundo);
     outline: 5px solid var(--cor-destaque);
-    font-size: 1em;
-    font-weight: 500;
-    width: 320px;
+    font-size: 1.05em;
+    font-weight: 600;
+    width: 370px;
     cursor: pointer;
     transition: all .3s ease-in;
 }
@@ -224,13 +230,17 @@ header{
     outline: 0;
 }
 
-.btn-primary span{
+.btn-primary span svg{
+    transform: translateY(7px);
     display: inline-block;
-    font-size: 1.1em;
+    width: 1.6em;
+    height: auto;
+    fill: var(--cor-fundo);
     transition: all .3s ease-in-out;
 }
 
-.btn-primary:hover span{ transform: translateX(15px); }
+
+.btn-primary:hover span svg{ transform: translate(15px, 7px); }
 
 /* ----- SELOS ----- */
 .selos{
@@ -886,7 +896,8 @@ header{
 }
 
 .contato-whatsapp img{
-    width: 266px;
+    margin: 34px 0;
+    width: 300px;
     height: auto;
 }
 
@@ -903,12 +914,15 @@ header{
 }
 
 .contato-whatsapp a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--highlighted-font);
     font-weight: 600;
+    padding: 12px;
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
     text-decoration: none;
-    padding: 18px;
     font-size: 1em;
     border-radius: 15px;
     border: 3px solid var(--cor-destaque);
@@ -916,9 +930,17 @@ header{
     transition: all .3s ease-in-out;
 }
 
-.contato-whatsapp i{
-    font-size: 1.5em;
-    transform: translateY(2px);
+.contato-whatsapp svg{
+    display: inline-block;
+    width: 2em;
+    height: auto;
+    fill: var(--cor-fundo);
+    transform: translate(10px, 4px);
+    transition: all .3s ease-in-out;
+}
+
+.contato-whatsapp a:hover svg{ 
+    fill: var(--cor-texto-principal);
 }
 
 /* ----- DÚVIDAS ----- */
@@ -974,7 +996,7 @@ header{
     justify-content: center;
     align-items: center;
     font-family: var(--highlighted-font);
-    font-weight: 600;
+    font-weight: 700;
     background-color: var(--cor-fundo);
     color: var(--cor-destaque);
     text-decoration: none;
@@ -984,23 +1006,31 @@ header{
     margin-top: 20px;
     border: 3px solid var(--cor-fundo);
     width: 35%;
+    transition: all .3s ease-in-out;
 }
 
 .fechamento a:hover{
-    transition: all .3s ease-in-out;
     background-color: transparent;
     color: var(--cor-fundo);
     font-weight: 700;
+    padding-right: 30px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-}
-
-.fechamento a span{
-    font-size: 1.2em;
-    padding-left: 15px;
     transition: all .3s ease-in-out;
 }
 
-.fechamento a:hover span{ transform: translateX(10px); }
+.fechamento a span svg{
+    width: 2.6em;
+    height: auto;
+    transform: translateY(2px);
+    padding-left: 15px;
+    fill: var(--cor-texto-principal);
+    transition: all .3s ease-in-out;
+}
+
+.fechamento a:hover span svg{ 
+    fill: var(--cor-fundo);
+    transform: translate(10px, 2px); 
+}
 
 .google-logo svg{
     display: block;
@@ -1186,6 +1216,4 @@ footer{
     transform: scale(1.03) translateY(-3px);
 }
 
-#voltar-topo{
-    display: none;
-}
+#voltar-topo{ display: none; }

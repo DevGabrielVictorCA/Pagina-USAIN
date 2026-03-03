@@ -93,19 +93,24 @@
 
     .nav-bar .btn-destaque-mobile{ 
         display: block; 
-        padding: 13px 30px;
+        padding: 16px 40px;
     }
 
     /* Problema */
-    .problema-img img{ width: 20em; }
+    .problema-img img{ 
+        margin-right: 0;
+        width: 20em; 
+    }
 
     .problema article h2,
     .problema article p{ text-align: center; }
 
     .problema article h2,
+    .funcionamento h2 { font-size: 1.45em; }
+
     .skils h2,
-    .funcionamento h2,
-    .portfolio article h2,
+    .titulo-projetos h2,
+    .depoimentos h2,
     .contato h2 { font-size: 1.35em; }
 
     .problema article p,
@@ -141,10 +146,12 @@
     }
 
     /* Contato */
+    .contato-whatsapp img{ margin: 17.5px 0; }
+
     .contato-whatsapp a{ 
-        width: 90%; 
+        width: 100%; 
         line-height: 30px;
-        padding: 11.5px;
+        padding: 9px;
     }
 
     /* Fechamento */
@@ -170,9 +177,7 @@
     .B-aside{
         width: 65px;
         height: 65px;
-        font-size: 2.3rem;
     }
-
 }
 
 /* Tela deitada */
@@ -215,6 +220,10 @@
     /* Depoimentos */
     .depoimento-box blockquote{ padding-top: 1px; }
 
+    /* Contatos */
+    .contato-whatsapp img{ margin: 20px 0; }
+    .contato-whatsapp a{ padding: 9px; }
+
     /* Botões aside */
     .aside-btns{ gap: 1.3em; }
 
@@ -240,7 +249,7 @@
 
     .btn-primary{
         font-size: 1em;
-        width: 85%;
+        width: 90%;
         padding: 15px;
         line-height: 25px;
     }
@@ -251,11 +260,17 @@
     /* Problema */
     .problema{ flex-direction: column; }
     .problema-img-container{ margin: 7% 0; }
+    .problema-img img{ width: 100%; }
 
-    .problema-img img{ 
-        width: 100%;
-        margin-right: 0; 
+    /* Serviços */
+    .sk-card{
+        width: 85%;
+        height: 315px;
+        padding: 1.1em;
     }
+
+    .img-sk svg{ width: 3.9em; }
+    .sk-content h3{ margin: 25px 0 3px;}
 
     /* Métodos de Trabalho */
     .timeline-item:not(:first-child)::before{
@@ -345,15 +360,15 @@
     .footer-bottom{ gap: 1.5em; }
 
     .redes-sociais{
-        gap: 1em;
+        gap: .9em;
     }
 
     .redes-sociais a{
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
 
-    .redes-sociais i{ font-size: 1.9em; }
+    .redes-sociais svg{ width: 2.1em; }
     
     /* Botões aside */
     .B-aside{
