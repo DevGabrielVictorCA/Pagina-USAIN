@@ -82,14 +82,14 @@ header{
 .navbar-link,
 .btn-destaque{
     font-family: var(--highlighted-font);
-    padding: 12px 20px;
     text-decoration: none;
+    padding: 12px 20px;
 }
 
 .navbar-link{
     display: flex;
     color: var(--cor-texto-principal);
-    margin: 0 10px;
+    margin: 10px;
     font-weight: 600;
     position: relative;
 }
@@ -118,7 +118,6 @@ header{
     background-color: var(--cor-destaque);
     font-weight: 500;
     font-size: 1.1em;
-    padding: 12px 20px;
     border-radius: 15px;
     font-family: var(--highlighted-font);
     border: 2.7px solid var(--cor-destaque);
@@ -225,7 +224,8 @@ header{
 
 .btn-primary:hover{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
-    background-color: transparent;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
     padding-right: 30px;
     outline: 0;
 }
@@ -240,7 +240,10 @@ header{
 }
 
 
-.btn-primary:hover span svg{ transform: translate(15px, 7px); }
+.btn-primary:hover span svg{ 
+    transform: translate(15px, 7px); 
+    fill: var(--cor-texto-principal);
+}
 
 /* ----- SELOS ----- */
 .selos{
@@ -1034,7 +1037,7 @@ header{
 
 .google-logo svg{
     display: block;
-    width: 1.2em; 
+    width: 1.15em; 
     height: auto;
     fill: var(--cor-fundo);
     font-size: 7.5em;
@@ -1081,15 +1084,15 @@ footer{
 }
 
 .footer-logo-img img{
-    width: 145px;
+    width: 115px;
     height: auto;
-    transform: translateY(25px);
+    transform: translateY(38px);
 }
 
 .footer-logo-h2{
     text-align: center;
     letter-spacing: .5px;
-    padding-bottom: 10px !important;
+    padding-bottom: 7px !important;
     font-size: 1.5rem;
 }
 
