@@ -34,7 +34,7 @@ O projeto foi desenvolvido utilizando HTML, CSS e JavaScript puro, com foco em p
 ## 📂 Estrutura do projeto
 
 ```
-📦 usain-website
+📦 Pagina-USAIN
  ┣ 📂 images
  ┣ 📂 styles
  ┣ 📂 scripts
@@ -57,7 +57,7 @@ git clone https://github.com/DevGabrielVictorCA/Pagina-USAIN.git
 2. Acesse a pasta do projeto:
 
 ```bash
-cd usain-website
+cd Pagina-USAIN
 ```
 
 3. Abra o arquivo `index.html` no navegador
