@@ -51,7 +51,7 @@ Não é necessário instalar dependências.
 1. Clone o repositório:
 
 ```bash
-git clone [link-do-repositorio]
+git clone https://github.com/DevGabrielVictorCA/Pagina-USAIN.git
 ```
 
 2. Acesse a pasta do projeto:
