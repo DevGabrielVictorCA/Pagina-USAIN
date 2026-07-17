@@ -54,7 +54,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        height: 5px;
+        height: 4px;
         top: 40px;
         left: 0;
         transform: rotate(0deg);
@@ -66,9 +66,9 @@
     .abrir-menu span:nth-child(1){ top: 0px; }
 
     .abrir-menu span:nth-child(2),
-    .abrir-menu span:nth-child(3){ top: 11px; }
+    .abrir-menu span:nth-child(3){ top: 10px; }
 
-    .abrir-menu span:nth-child(4){ top: 22px; }
+    .abrir-menu span:nth-child(4){ top: 20px; }
 
     .abrir-menu.open span:nth-child(1){
         top: 15px;
@@ -280,7 +280,7 @@
     }
 
     .timeline{
-        gap: 2.2em;
+        gap: 2.4em;
     }
 
     /* Portfólio */
@@ -324,13 +324,14 @@
 
     .estrelas{ width: 70%; }
 
-
     /* Contatos */
     .contato-email button,
     .contato-whatsapp a{
         line-height: 32px;
         padding: 10px ;
     }
+
+    .contato-whatsapp img{ max-width: 250px; }
 
     /* Fechamento */
     .fechamento h2{ font-size: 1.5em; }
@@ -359,9 +360,7 @@
     .footer-col:first-child{ width: 100%; }
     .footer-bottom{ gap: 1.5em; }
 
-    .redes-sociais{
-        gap: .9em;
-    }
+    .redes-sociais{ gap: .9em; }
 
     .redes-sociais a{
         width: 50px;

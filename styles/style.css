@@ -900,7 +900,7 @@ header{
 
 .contato-whatsapp img{
     margin: 34px 0;
-    width: 300px;
+    max-width: 300px;
     height: auto;
 }
 
